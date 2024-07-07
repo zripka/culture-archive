@@ -45,7 +45,7 @@ for item in os.listdir('raw_data'):
     for show in one_month_list:
         try:
             date = show['startDate'][:10]
-            time = show['startDate'][12:]
+            time = show['startDate'][11:19]
             artist_name = html.unescape(show['name'].replace("'", "''"))
             show_description = html.unescape(show['description'].replace("'", "''"))
             try:
